@@ -1,0 +1,60 @@
+#hedProject {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15rem;
+    color: whitesmoke;
+    background-image: url('../img/phoneProject.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+#hedProject h1 {
+    color: whitesmoke;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+
+
+@media (min-width: 375px) {
+    #hedProject h1 {
+        letter-spacing: .2rem;
+        font-size: 1.8rem;
+    }
+}
+@media (min-width: 414px) {
+    #hedProject h1  {
+        letter-spacing: .2rem;
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #hedProject {
+       background-image: url('../img/desktopProject.jpg');
+       background-position: center;
+       height: 25rem;
+    }
+    #hedProject h1 {
+        letter-spacing: .4rem;
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    #hedProject h1 {
+        letter-spacing: .5rem;
+        font-size: 3rem;
+    }
+}
+@media (min-width: 1400px) {
+    #hedProject {
+        height: 30rem;
+     }
+}

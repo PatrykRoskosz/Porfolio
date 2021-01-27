@@ -1,0 +1,60 @@
+#hedGame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15rem;
+    color: whitesmoke;
+    background-image: url('../img/phoneGame.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+#hedGame h1 {
+    color: whitesmoke;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+
+
+@media (min-width: 375px) {
+    #hedGame h1 {
+        letter-spacing: .2rem;
+        font-size: 1.8rem;
+    }
+}
+@media (min-width: 414px) {
+    #hedGame h1  {
+        letter-spacing: .2rem;
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #hedGame {
+       background-image: url('../img/desktopGame.jpg');
+       background-position: center;
+       height: 25rem;
+    }
+    #hedGame h1 {
+        letter-spacing: .4rem;
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    #hedGame h1 {
+        letter-spacing: .5rem;
+        font-size: 3rem;
+    }
+}
+@media (min-width: 1400px) {
+    #hedGame {
+        height: 30rem;
+     }
+}

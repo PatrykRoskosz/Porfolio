@@ -1,0 +1,70 @@
+#hed {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15rem;
+    color: whitesmoke;
+    background-image: url('../img/phoneHeader.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+#hed h1 , #hed h2 {
+    color: whitesmoke;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .6);
+    z-index: -1;
+}
+
+@media (min-width: 375px) {
+    #hed h1 , #hed h2 {
+        letter-spacing: .2rem;
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 414px) {
+    #hed h1 , #hed h2 {
+        letter-spacing: .2rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #hed {
+       background-image: url('../img/desktopHeader.jpg');
+       background-position: center;
+       height: 25rem;
+    }
+    #hed h1 , #hed h2 {
+        letter-spacing: .4rem;
+        font-size: 2rem;
+    }
+}
+@media (min-width: 1024px) {
+    #hed h1 , #hed h2 {
+        letter-spacing: .5rem;
+        font-size: 2.4rem;
+    }
+}
+@media (min-width: 1400px) {
+    #hed {
+        height: 30rem;
+     }
+}

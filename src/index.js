@@ -1,17 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Layout } from "antd";
+import "antd/dist/antd.css";
+import { useRoutes, A } from "hookrouter";
+import routes from './rauter';
+import Components from './components';
+import './css/mine.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const {Header, Footer, Content } = Layout;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+const App =() => {
+    const routeResult = useRoutes(routes);
+
+    return (
+        <Layout className="App">
+            <Header className='header'>
+                <Components.Navi />
+            </Header>
+            <Content className='content'>
+                {routeResult}
+            </Content>
+            <Footer></Footer>
+
+        </Layout>
+    );
+};
+
+
+
+const rootElement = document.getElementById("root");
+
+ReactDOM.render(<App/>, rootElement);
