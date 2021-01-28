@@ -1,0 +1,18 @@
+.backButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .1rem .4rem;
+    border: 1px solid rgb(22, 105, 153);
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    background-color: rgb(22, 105, 153);
+    color: whitesmoke;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .5s;
+}
+.backButton:hover {
+    cursor: pointer;
+}

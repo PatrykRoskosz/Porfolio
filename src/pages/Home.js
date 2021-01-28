@@ -11,7 +11,7 @@ const Home = () => {
 
                 <section>
                    <article className='cardArticle'>
-
+                   
                        <div className='card'>
                            <div className='cardHeader'>
                                <h2>About me</h2>
@@ -45,6 +45,36 @@ const Home = () => {
                             </div>
                        </div>
                    </article>
+                    <section className='scillsSection'>
+                        <h2>My Scills</h2>
+                        <div className='skillsWrap'>
+                            <div className='skills'>
+                                <i class="fab fa-html5"></i>
+                                <p>HTML5</p>
+                            </div>
+                            <div className='skills'>
+                                <i class="fab fa-css3-alt"></i>
+                                <p>CSS3</p>
+                            </div>
+                            <div className='skills'>
+                                <i class="fab fa-js"></i>
+                                <p>JavaScript</p>
+                            </div>
+                            <div className='skills'>
+                             <i class="fab fa-react"></i>
+                             <p>React.js</p>
+                            </div>
+                            <div className='skills'>
+                                <i class="fab fa-node"></i>
+                                <p>Node.js</p>
+                            </div>
+                            <div className='skills'>
+                                <i class="fab fa-git-alt"></i>
+                                <p>Git</p>
+                            </div>
+                        </div>
+                    </section>
+
                 </section>
 
 

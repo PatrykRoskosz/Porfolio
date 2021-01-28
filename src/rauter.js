@@ -6,7 +6,8 @@ const {
     Home,
     Contact,
     Games,
-    Project
+    Project,
+    Todu
 } = pages;
 
 
@@ -14,7 +15,8 @@ const routes = {
     "/": () => <Home />,
     "/contact": () => <Contact />,
     "/games": () => <Games />,
-    "/projects": () => <Project />
+    "/projects": () => <Project />,
+    "/projects/todu": () => <Todu />
 }
 
 export default routes;

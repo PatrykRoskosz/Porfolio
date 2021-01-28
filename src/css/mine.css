@@ -6,10 +6,14 @@
 body {
     font-size: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 
 .header {
+    position: sticky; 
+    top: 0;
     background-color: rgb(29, 28, 28);
+    z-index: 2;
 }
 
 

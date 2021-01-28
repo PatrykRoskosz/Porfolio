@@ -1,0 +1,67 @@
+.taskElement {
+    margin: .5rem;
+    display: flex;
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid rgb(35, 149, 184);
+}
+.taskTextWrap {
+    padding: .1rem .2rem;
+    width: 60%;
+    font-size: .8rem;
+    text-align: left;
+    color:  rgb(16, 108, 136);
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.taskButtonWrap {
+    position: relative;
+    width: 40%;
+}
+
+.taskButton {
+    position: absolute;
+    top: 5px;
+    padding: 1px 2px;
+    width: 42px;
+    height: 1.6rem;
+    border: none;
+    border-radius: .4rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+.ready {
+    right: 0px;
+    background-color: rgb(54, 190, 95);
+    color: rgb(44, 133, 71);
+}
+.ready:hover {
+    background-color: rgb(36, 177, 78);
+} 
+.ready:active, .edit:active {
+    border: 1px solid black;
+    color: whitesmoke;
+}
+.ready:focus, .edit:focus {
+    outline: 0;
+}
+.edit {
+    right: 45px;
+    background-color: rgb(200, 199, 91);
+    color: rgb(139, 137, 18);
+}
+.edit:hover{
+    background-color: rgb(170, 168, 62);
+}
+
+@media (min-width: 414px) {
+    .taskTextWrap {
+        width: 70%;
+        font-size: 1rem;
+    }
+    
+    .taskButtonWrap {
+        width: 30%;
+    }
+}

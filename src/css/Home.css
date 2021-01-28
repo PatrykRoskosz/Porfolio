@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.homeSection h1 {
+.homeSection h1{
     display: block;
     width: 100%;
     padding: 1rem;
@@ -21,6 +21,7 @@
 .cardArticle {
     text-align: center; 
     min-width: 100vw;  
+    border-bottom: 1px solid black;
 }
 .card {
     display: flex;
@@ -43,6 +44,52 @@
     font-size: 1rem;
 }
 
+/* Section scills */
+
+.scillsSection h2 {
+    margin: 1.2rem 0px;
+    padding-bottom: 1.2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(153, 151, 151);
+}
+
+.skillsWrap {
+    width: 100vw;
+}
+
+.skillsWrap .skills {
+    padding-top: .3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.skillsWrap .skills .fab{
+    font-size: 6rem;
+}
+.fa-html5 {
+    color: rgb(212, 56, 36);
+}
+.fa-css3-alt {
+    color: rgb(27, 108, 200);
+}
+.fa-js{
+    color: rgb(224, 194, 22);
+}
+.fa-react {
+    color: rgb(63, 171, 214);
+}
+.fa-node {
+    color: rgb(11, 107, 19);
+}
+.fa-git-alt {
+    color: rgb(235, 77, 29);
+}
+.skillsWrap .skills p {
+    margin-bottom: 0;
+}
+
 
 @media (min-width: 375px) {
     .homeSection h1 {
@@ -50,24 +97,44 @@
         letter-spacing: .15rem;
     }
 }
+@media (min-width: 414px) {
+    .scillsSection h2 {
+        font-size: 1.4rem; 
+    }
+    .skillsWrap .skills .fab {
+        font-size: 8rem;
+    }
+    
+}
 @media (min-width: 768px) {
     .homeSection h1 {
         font-size: 2rem;
         letter-spacing: .25rem;
     }
+    .skillsWrap {
+        display: flex;
+    }
+    .skillsWrap .skills .fab {
+        font-size: 6rem;
+    }
+    
 }
 @media (min-width: 1024px) {
     .cardArticle {
         display: flex;
         justify-content: space-around;
+        border-bottom: none;
     }
     .card{
         margin: 2rem 0;
         width: 30%;
         border: 1px solid rgb(29, 28, 28);
-        border-radius: .5rem;
+        border-radius: .2rem;
         overflow: hidden;
         box-shadow: .4rem .4rem .8rem black;
         font-size: 1.2rem;
+    }
+    .scillsSection h2 {
+        font-size: 1.8rem; 
     }
 }

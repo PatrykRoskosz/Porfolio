@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Layout } from "antd";
 import "antd/dist/antd.css";
-import { useRoutes, A } from "hookrouter";
+import { useRoutes } from "hookrouter";
 import routes from './rauter';
 import Components from './components';
 import './css/mine.css';
