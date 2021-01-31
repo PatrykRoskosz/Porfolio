@@ -5,7 +5,10 @@ const Games = () => {
     return (
         <section>
             <Components.GameHeader />
-            <h1>Games</h1>
+            <section className='panel'>
+                <Components.ButtonProject head='Snake' href='/games/snake' text='Snake'/>
+            </section>
+            
         </section>
        
     )

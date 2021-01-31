@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.editPanel {
+    position: absolute;
+    top: 30%;
+    width: 280px;
+    height: 120px;
+    border-radius: 1rem;
+    z-index: 10;
+    background-color: rgb(200, 199, 91);
+}
+
+.editInput {
+    position: absolute;
+    padding: .2rem .4rem;
+    top: 20%;
+    left: 50%;
+    width: 70%;
+    height: 18%;
+    border: none;
+    border-radius: .5rem;
+    font-size: .8rem;
+    transform: translate(-50%);
+
+}
+.editInput:focus {
+    outline: 0;
+    background-color: rgb(238, 232, 153);
+}
+.editInput:active {
+    border: 1px solid black;
+} 
+
+.editbutton {
+    position: absolute;
+    padding: .2rem .4rem;
+    border: none;
+    bottom: 15%;
+    width: 50px;
+    border-radius: .3rem;
+    font-size: .8rem;
+}
+.editbutton:focus {
+    outline: 0;
+}
+.editbutton:active {
+    border: 1px solid black;
+}
+
+.acceptEdit {
+    left: 15%;
+    background-color: rgb(54, 190, 95);
+    color: rgb(44, 133, 71);
+}
+
+.acceptEdit:hover {
+    background-color: rgb(117, 194, 140);
+}
+
+.cancleEdit{
+    right: 15%;
+    background-color: rgb(236, 106, 106);
+    color: rgb(167, 57, 57);
+}
+
+.cancleEdit:hover {
+    background-color: rgb(238, 142, 142);
+}
+
+@media (min-width: 414px) {
+    .editPanel {
+        width: 80%;
+    }
+    .editInput {
+        height: 25%;
+        font-size: 1rem;
+    }
+    .editbutton {
+        padding: .2rem .4rem;
+        border: none;
+        bottom: 15%;
+        width: 70px;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 768px) {
+    .editPanel {
+        width: 80%;
+        height: 160px;
+    }
+    .editInput {
+        font-size: 1.4rem;
+    }
+    .editbutton {
+        width: 100px;
+        font-size: 1.4rem;
+    }
+    .acceptEdit {
+        left: 25%;
+    }
+    .cancleEdit{
+        right: 25%;
+    }
+}
+@media (min-width: 768px) {
+    .editPanel {
+        width: 80%;
+        height: 200px;
+    }
+    .editInput {
+        font-size: 1.8rem;
+    }
+    .editbutton {
+        width: 120px;
+        font-size: 1.8rem;
+    }
+    .acceptEdit {
+        left: 30%;
+    }
+    .cancleEdit{
+        right: 30%;
+    }
+}

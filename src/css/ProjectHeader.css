@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100vw;
     height: 15rem;
     color: whitesmoke;
     background-image: url('../img/phoneProject.jpg');

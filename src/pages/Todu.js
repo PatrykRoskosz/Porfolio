@@ -6,7 +6,12 @@ const tasks = [];
 
 const Todu = () => {
     const [inputText, setInputText] = useState('');
+    const [inputEditText , setinputEditText] = useState('');
+    const [editIndex, setEditIndex] = useState(0);
     const [countTask, setCountTask] = useState(0);
+    const [showEdit, setShowEdit] = useState(false);
+
+
     const handleInputText = e => setInputText(preventValue => preventValue = e.target.value)
 
     const handeleAddToTasks = () => {
@@ -29,14 +34,30 @@ const Todu = () => {
         })
     }
     const handleEditTask = (e) => {
-       
+        const elIndex = parseFloat(e.target.id);
+        setShowEdit(preventValue => !preventValue);  
+        setinputEditText(preventValue => preventValue = tasks[elIndex].text);
+        setEditIndex(preventValue => preventValue = elIndex);
     }
-  
+
+    const handleAcceptEditButton = () =>{
+        tasks[editIndex].text = inputEditText;
+        setShowEdit(preventValue => !preventValue);
+        setinputEditText(preventValue => preventValue = '');
+    } 
+    
+    const handleInputEditChange = e => setinputEditText(preventValue => preventValue = e.target.value) 
    
         const task = tasks.map((el,index) => <Component.TaskElement key={index} id={index} text={el.text} edit={handleEditTask} ready={handleReadyTask } />)
     
     return (
         <section className='toduSection'>
+            {showEdit ? <Component.EditPanelTodu
+                accept={handleAcceptEditButton} 
+                text={inputEditText} 
+                change={handleInputEditChange} 
+                cancle={()=> setShowEdit(preventValue=> !preventValue)} 
+                />: null}
          <Component.BackButton href='/projects'/>
          <h1>TODU application</h1>
          <div className='toduPanel'>

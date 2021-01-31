@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.shopingListSection {
+    position: relative;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.searchListWrap {
+    width: 100%;
+}
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .75);
+    z-index: -1;
+}
+
+.searchHeader{
+ position: relative;
+ /* display: flex;
+ flex-direction: column;
+ align-items: center; */
+ width: 100%;
+ height: 180px;
+ background-image: url('../img/straganPhone.jpg');
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ z-index: 0;
+}
+.searchHeader h1 {
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+    color: whitesmoke;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.search {
+    position: absolute;
+    padding: .1rem .2rem;
+    bottom: 20%;
+    left: 10%;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    font-size: .8rem;
+}
+.search:hover {
+    background-color: rgb(226, 213, 213);
+}
+.search:active {
+    border: 1px solid black;
+}
+.search:focus {
+    outline: 0px;
+    background-color: rgb(187, 241, 174);
+    border: 1px solid black;
+}
+
+.shopList {
+    font-size: .8rem;
+    border-bottom: 1px solid black;
+}
+
+.shopList h2 {
+    padding: 5px 10px ;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.shopList ul {
+    list-style: none;
+}
+.shopList ul li {
+    padding: 1px 5px;
+    border-bottom:1px solid rgb(226, 226, 226);
+}
+.shopList ul li:last-child {
+    padding: 1px 5px;
+    border-bottom: 0px;
+}
+
+@media (min-width: 375px) {
+    .search {
+        font-size: .9rem;
+    }
+    .searchHeader h1 {
+        font-size: 1.8rem;
+    }
+    .shopList h2 {
+        padding: 10px 10px;
+        font-size: 1.2rem;
+    }
+    .shopList {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 768px) {
+    .searchHeader{ 
+        height: 220px;
+       }
+    .search {
+        font-size: 1.2rem;
+    }
+    .searchHeader h1 {
+        font-size: 2.2rem;
+    }
+    .shopList h2 {
+        padding: 10px 15px;
+        font-size: 1.4rem;
+    }
+    .shopList {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1024px) {
+    
+    .searchHeader{ 
+        background-image: url('../img/straganDesktop.jpg');
+        height: 300px;
+       }
+    .search {
+        font-size: 1.6rem;
+    }
+    .searchHeader h1 {
+        font-size: 3rem;
+        letter-spacing: .4rem;
+    }
+    .shopList h2 {
+        font-size: 2rem;
+    }
+    .shopList {
+        padding: 5px 10px;
+        font-size: 1.6rem;
+    }
+}
+@media (min-width: 1440px) {
+    .searchListWrap {
+        margin-top: 50px;
+        width: 70%;
+        box-shadow: 10px 10px 8px black;
+        border: 1px solid black;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .searchHeader{ 
+        height: 300px;
+       }
+    .search {
+        font-size: 1.6rem;
+    }
+    .searchHeader h1 {
+        font-size: 3rem;
+        letter-spacing: .4rem;
+    }
+    .shopList h2 {
+        font-size: 2rem;
+    }
+    .shopList {
+        padding: 5px 10px;
+        font-size: 1.6rem;
+        border: none;
+    }
+}
+
+
+

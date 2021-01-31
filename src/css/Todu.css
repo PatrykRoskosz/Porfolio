@@ -84,6 +84,7 @@
 }
 .toduButton:focus {
     outline: 0;
+    border: .2rem solid  rgb(34, 151, 187);
     
 }
 
